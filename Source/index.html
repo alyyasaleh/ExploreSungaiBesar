@@ -8,39 +8,54 @@
 
   <title>Explore Sungai Besar</title>
 
-    <!-- Local Ionic JavaScript -->
-    <script type="module"
+  <!-- Local Ionic Library -->
+  <script type="module"
     src="vendor/ionic/dist/ionic/ionic.esm.js">
-    </script>
+  </script>
 
-    <!-- Local Ionic CSS -->
-    <link rel="stylesheet"
+  <link rel="stylesheet"
     href="vendor/ionic/css/ionic.bundle.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <ion-app>
 
+    <!-- Header -->
     <ion-header>
-      <ion-toolbar color="primary">
+      <ion-toolbar class="home-toolbar" color="secondary">
         <ion-title>Explore Sungai Besar</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content class="ion-padding">
+    <ion-content class="ion-padding home-content">
 
-      <h1>Welcome to Sungai Besar!</h1>
+      <!-- Welcome -->
+      <h1 class="welcome-title">
+        Welcome to Sungai Besar!
+      </h1>
 
-      <p>
-        Discover the beautiful attractions,
-        traditional food and unique culture
-        of Sungai Besar, Selangor.
-      </p>
+      <!-- Sungai Besar Picture -->
+      <figure class="home-picture">
+        <img
+          src="images/sungai-besar.jpg"
+          alt="Scenic view of Sungai Besar, Selangor">
 
-      <ion-card>
+        <figcaption>
+          Discover the beauty of Sungai Besar,
+          Selangor.
+        </figcaption>
+      </figure>
+
+      <h2 class="home-heading">
+        About Sungai Besar
+      </h2>
+
+      <!-- About Hometown -->
+      <ion-card class="home-about">
+
         <ion-card-header>
           <ion-card-title>
             About Sungai Besar
@@ -48,31 +63,93 @@
         </ion-card-header>
 
         <ion-card-content>
-          Sungai Besar is a town located in
-          the Sabak Bernam district of Selangor,
-          Malaysia. It is known for its
-          agricultural landscapes and
-          local community heritage.
+          <p>
+            Sungai Besar is a town located
+            in the Sabak Bernam district
+            of Selangor, Malaysia.
+          </p>
+
+          <p>
+            Known for its agricultural
+            landscapes and village
+            surroundings, Sungai Besar
+            offers visitors a peaceful
+            countryside experience.
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+      <!-- Navigation -->
+      <h2 class="home-heading">
+        Start Exploring
+      </h2>
+
+      <ion-list class="home-navigation">
+
+        <ion-item href="places.html" detail="true">
+          <ion-label class="ion-text-wrap">
+            <h2>Places to Explore</h2>
+            <p>
+              Discover nature, attractions
+              and local markets.
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item href="food.html" detail="true">
+          <ion-label class="ion-text-wrap">
+            <h2>Food & Culture</h2>
+            <p>
+              Explore traditional dishes
+              and local heritage.
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item href="interest.html" detail="true">
+          <ion-label class="ion-text-wrap">
+            <h2>Visitor Interest Form</h2>
+            <p>
+              Share your travel interests
+              and preferences.
+            </p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+      <!-- Hometown Highlights -->
+      <h2 class="home-heading">
+        What Makes Sungai Besar Special?
+      </h2>
+
+      <ion-card>
+        <ion-card-content>
+
+          <h3>Beautiful Countryside</h3>
+          <p>
+            Peaceful paddy fields and
+            agricultural landscapes.
+          </p>
+
+          <h3>Traditional Food</h3>
+          <p>
+            Local dishes influenced by
+            Javanese and Banjar heritage.
+          </p>
+
+          <h3>Local Community</h3>
+          <p>
+            Traditional village life,
+            markets and cultural activities.
+          </p>
+
         </ion-card-content>
       </ion-card>
 
-      <h2>Start Exploring</h2>
-
-      <ion-list>
-        <ion-item href="places.html">
-          <ion-label>Places to Explore</ion-label>
-        </ion-item>
-
-        <ion-item href="food.html">
-          <ion-label>Food & Culture</ion-label>
-        </ion-item>
-
-        <ion-item href="interest.html">
-          <ion-label>Visitor Interest Form</ion-label>
-        </ion-item>
-      </ion-list>
-
     </ion-content>
+
   </ion-app>
 </body>
 </html>

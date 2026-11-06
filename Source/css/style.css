@@ -1,24 +1,24 @@
 
 /* General Page Styling */
 ion-content {
-  --background: #f4f8f5;
+  --background: #a3c1e9;
 }
 
 h1 {
-  color: #205c44;
+  color: #000874;
   font-size: 26px;
   font-weight: bold;
   margin-top: 20px;
 }
 
 h2 {
-  color: #205c44;
+  color: #000874;
   font-size: 21px;
   margin-top: 25px;
 }
 
 p {
-  color: #465b50;
+  color: #000874;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -30,17 +30,19 @@ ion-card {
 }
 
 ion-card-title {
-  color: #205c44;
+  color: #000874;
   font-size: 20px;
 }
 
 ion-card-content {
   line-height: 1.6;
+  border-radius: 15px
 }
 
 /* Ionic List */
 ion-list {
   background: transparent;
+  border-radius: 15px
 }
 
 ion-item {
@@ -80,7 +82,7 @@ table {
 caption {
   padding: 12px;
   font-weight: bold;
-  color: #205c44;
+  color: #000874;
 }
 
 th, td {
@@ -91,11 +93,11 @@ th, td {
 
 th {
   background-color: #dcefe3;
-  color: #205c44;
+  color: #000874;
 }
 
 td {
-  color: #465b50;
+  color: #0c110f;
 }
 
 
@@ -128,7 +130,7 @@ td {
 
 #visitorForm h2 {
   font-size: 19px;
-  color: #205c44;
+  color: #000874;
   margin-top: 25px;
   margin-bottom: 12px;
 }
@@ -145,4 +147,51 @@ td {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
+}
+
+
+/* Welcome Section */
+.welcome-title {
+  color: #000874;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Homepage Picture */
+.home-picture {
+  margin: 0 0 20px;
+}
+
+.home-picture img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.home-picture figcaption {
+  text-align: center;
+  font-size: 12px;
+  color: #64786b;
+  margin-top: 8px;
+}
+
+/* Welcome Description */
+.welcome-description {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Hometown Highlights */
+.home-content h3 {
+  color: #000874;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 15px;
 }
