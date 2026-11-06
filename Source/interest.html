@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>Visitor Interest Form</title>
+
+  <!-- Local Ionic Library -->
+  <script type="module"
+    src="vendor/ionic/dist/ionic/ionic.esm.js">
+  </script>
+
+  <link rel="stylesheet"
+    href="vendor/ionic/css/ionic.bundle.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <ion-app>
+
+    <!-- Header -->
+    <ion-header>
+      <ion-toolbar color="primary">
+
+        <ion-buttons slot="start">
+          <ion-button href="index.html">
+            Home
+          </ion-button>
+        </ion-buttons>
+
+        <ion-title>Visitor Interest Form</ion-title>
+
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+
+      <h1>Plan Your Visit</h1>
+
+      <p>
+        Interested in exploring Sungai Besar?
+        Complete this form to share your
+        travel preferences and interests.
+      </p>
+
+      <ion-card>
+
+        <ion-card-header>
+          <ion-card-title>
+            Visitor Information
+          </ion-card-title>
+
+          <ion-card-subtitle>
+            Tell us about your interests
+          </ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <!-- Demonstration form only -->
+          <form id="visitorForm">
+
+            <!-- Text and Email Input -->
+            <ion-list>
+
+              <ion-list-header>
+                <ion-label>
+                  Personal Details
+                </ion-label>
+              </ion-list-header>
+
+              <ion-item>
+                <ion-input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  label="Full Name"
+                  label-placement="stacked"
+                  placeholder="Enter your name">
+                </ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-input
+                  id="email"
+                  name="email"
+                  type="email"
+                  label="Email Address"
+                  label-placement="stacked"
+                  placeholder="name@example.com">
+                </ion-input>
+              </ion-item>
+
+              <!-- Dropdown -->
+              <ion-item>
+                <ion-select
+                  id="attraction"
+                  name="attraction"
+                  label="Preferred Attraction"
+                  label-placement="stacked"
+                  placeholder="Choose an attraction">
+
+                  <ion-select-option value="paddy">
+                    Sungai Besar Paddy Fields
+                  </ion-select-option>
+
+                  <ion-select-option value="market">
+                    Pasar Petang Sungai Haji Dorani
+                  </ion-select-option>
+
+                  <ion-select-option value="beach">
+                    Pantai Bagan Nakhoda Omar
+                  </ion-select-option>
+
+                </ion-select>
+              </ion-item>
+
+            </ion-list>
+
+            <!-- Radio Buttons -->
+            <h2 id="visitPreferenceLabel">
+              Preferred Visit Type
+            </h2>
+
+            <ion-radio-group
+              id="visitPreference"
+              name="visitPreference"
+              aria-labelledby="visitPreferenceLabel">
+
+              <ion-list>
+
+                <ion-item>
+                  <ion-radio
+                    value="day-trip"
+                    justify="space-between">
+                    Day Trip
+                  </ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-radio
+                    value="weekend"
+                    justify="space-between">
+                    Weekend Trip
+                  </ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-radio
+                    value="holiday"
+                    justify="space-between">
+                    Holiday Visit
+                  </ion-radio>
+                </ion-item>
+
+              </ion-list>
+
+            </ion-radio-group>
+
+            <!-- Checkboxes -->
+            <h2>Areas of Interest</h2>
+
+            <p>
+              Select the activities that
+              interest you.
+            </p>
+
+            <ion-list>
+
+              <ion-item>
+                <ion-checkbox
+                  name="nature"
+                  value="nature"
+                  justify="space-between">
+                  Nature & Scenery
+                </ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                <ion-checkbox
+                  name="food"
+                  value="food"
+                  justify="space-between">
+                  Local Food
+                </ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                <ion-checkbox
+                  name="culture"
+                  value="culture"
+                  justify="space-between">
+                  Culture & Heritage
+                </ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                <ion-checkbox
+                  name="shopping"
+                  value="shopping"
+                  justify="space-between">
+                  Local Markets
+                </ion-checkbox>
+              </ion-item>
+
+            </ion-list>
+
+            <!-- Toggle -->
+            <h2>Preferences</h2>
+
+            <ion-list>
+              <ion-item>
+                <ion-toggle
+                  id="updates"
+                  name="updates"
+                  justify="space-between">
+                  Interested in Travel Updates
+                </ion-toggle>
+              </ion-item>
+            </ion-list>
+
+            <!-- Textarea -->
+            <h2>Additional Comments</h2>
+
+            <ion-textarea
+              id="comments"
+              name="comments"
+              label="Your Comments"
+              label-placement="stacked"
+              placeholder="Share what you would like to explore."
+              rows="4"
+              auto-grow="true">
+            </ion-textarea>
+
+            <!-- Button: no processing -->
+            <ion-button
+              type="button"
+              expand="block"
+              class="ion-margin-top">
+              Visitor Form Preview
+            </ion-button>
+
+          </form>
+
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Navigation -->
+      <ion-button
+        expand="block"
+        fill="outline"
+        href="index.html">
+        Back to Home
+      </ion-button>
+
+    </ion-content>
+
+  </ion-app>
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>Places to Explore</title>
+
+  <!-- Local Ionic Library -->
+  <script type="module"
+    src="vendor/ionic/dist/ionic/ionic.esm.js">
+  </script>
+
+  <link rel="stylesheet"
+    href="vendor/ionic/css/ionic.bundle.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <ion-app>
+
+    <!-- Header -->
+    <ion-header>
+      <ion-toolbar color="primary">
+
+        <ion-buttons slot="start">
+          <ion-button href="index.html">
+            Home
+          </ion-button>
+        </ion-buttons>
+
+        <ion-title>Places to Explore</ion-title>
+
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+
+      <h1>Explore Sungai Besar</h1>
+
+      <p>
+        Discover the beautiful countryside,
+        local attractions and interesting
+        places around Sungai Besar, Selangor.
+      </p>
+
+      <!-- Attraction 1 -->
+      <ion-card>
+
+        <img
+          class="place-photo"
+          src="images/paddy-field.jpg"
+          alt="Green paddy fields in Sungai Besar">
+
+        <ion-card-header>
+          <ion-card-subtitle>
+            Nature & Agriculture
+          </ion-card-subtitle>
+
+          <ion-card-title>
+            Sungai Besar Paddy Fields
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            Sungai Besar is surrounded by
+            beautiful paddy fields that
+            reflect the agricultural
+            lifestyle of the local community.
+          </p>
+
+          <p>
+            Visitors can enjoy peaceful
+            countryside views and learn
+            about the importance of rice
+            farming in the region.
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+      <!-- Attraction 2 -->
+      <ion-card>
+
+        <img
+          class="place-photo"
+          src="images/dorani-market.jpg"
+          alt="Local market in Sungai Haji Dorani">
+
+        <ion-card-header>
+          <ion-card-subtitle>
+            Local Community
+          </ion-card-subtitle>
+
+          <ion-card-title>
+            Pasar Petang Sungai Haji Dorani
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            This local market offers visitors
+            a chance to experience the daily
+            life of the community.
+          </p>
+
+          <p>
+            Visitors can explore stalls
+            selling fresh seafood,
+            traditional kuih and other
+            local products.
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+      <!-- Attraction 3 -->
+      <ion-card>
+
+        <img
+          class="place-photo"
+          src="images/bagan-nakhoda-omar.jpg"
+          alt="Coastal scenery at Bagan Nakhoda Omar">
+
+        <ion-card-header>
+          <ion-card-subtitle>
+            Beach & Recreation
+          </ion-card-subtitle>
+
+          <ion-card-title>
+            Pantai Bagan Nakhoda Omar
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            Located in the Sabak Bernam
+            district, Pantai Bagan Nakhoda
+            Omar is a coastal destination
+            with relaxing seaside views.
+          </p>
+
+          <p>
+            The surrounding area is also
+            associated with fishing
+            activities and local seafood.
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+      <!-- Ionic List -->
+      <h2>Things to Experience</h2>
+
+      <ion-list>
+
+        <ion-item>
+          <ion-label class="ion-text-wrap">
+            <h2>Enjoy Countryside Views</h2>
+            <p>
+              Observe the paddy fields
+              from public roads and paths.
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="ion-text-wrap">
+            <h2>Explore Local Markets</h2>
+            <p>
+              Discover traditional food
+              and locally sold products.
+            </p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="ion-text-wrap">
+            <h2>Experience Coastal Life</h2>
+            <p>
+              Enjoy the seaside atmosphere
+              and fishing village heritage.
+            </p>
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+      <!-- HTML Table -->
+      <h2>Attraction Comparison</h2>
+
+      <p>
+        Compare the attractions before
+        planning your visit.
+      </p>
+
+      <div class="table-container">
+
+        <table>
+
+          <caption>
+            Places to Explore Around Sungai Besar
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Attraction</th>
+              <th scope="col">Category</th>
+              <th scope="col">Main Feature</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <th scope="row">
+                Sungai Besar Paddy Fields
+              </th>
+              <td>Nature</td>
+              <td>Rice fields</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                Pasar Petang Sungai Haji Dorani
+              </th>
+              <td>Market</td>
+              <td>Local products</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                Pantai Bagan Nakhoda Omar
+              </th>
+              <td>Recreation</td>
+              <td>Coastal scenery</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- External Link -->
+      <h2>More Information</h2>
+
+      <p>
+        Discover additional attractions
+        through the official tourism website.
+      </p>
+
+      <ion-button
+        expand="block"
+        fill="outline"
+        href="https://selangor.travel/discover-sabak-bernam/">
+
+        Visit Tourism Selangor
+
+      </ion-button>
+
+      <!-- Home Navigation -->
+      <ion-button
+        expand="block"
+        href="index.html">
+
+        Back to Home
+
+      </ion-button>
+
+    </ion-content>
+
+  </ion-app>
+</body>
+</html>
